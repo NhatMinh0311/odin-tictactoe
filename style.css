@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+#board {
+    display: grid;
+    grid-template: repeat(3, 150px) / repeat(3, 150px);
+    gap: 3px;
+    > .square {
+        border: 2px solid #0891b2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5em;
+        border-radius: 5px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+input {
+    display: block;
+    font-size: 1.3em;
+    width: 220px;
+    background-color: #36C2CE;
+    color: white;
+}
+
+
+input:not(:placeholder-shown):not(:focus) {
+    border-width: 0;
+}
+label[for="name2"] {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+input#name2:not(:focus) {
+    text-align: end;
+}
+
+#result-display {
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: #77E4C8;
+    color: #4535C1;
+    border-radius: 8px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-width: 0;
+    border-radius: 8px;
+    background-color: #36C2CE;
+    color: white;
+}
